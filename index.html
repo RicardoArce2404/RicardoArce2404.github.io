@@ -7,8 +7,31 @@
   </head>
   <body>
     <h1 align="center">RetoZkT</h1>
+
     <h3 align="center">Pista:</h3>
+
     <p align="center">¿En qué año fue creado el grupo?</p>
-    <div align="center"><input type="number" id="codigo" autofocus /></div>
+
+    <div align="center">
+      <input type="number" id="codigo" autofocus />
+      <input type="submit" value=">" onclick="comprobar();" />
+    </div>
+    <br />
+
+    <div align="center" id="pista"></div>
+
+    <script>
+      var pista = document.getElementById("pista");
+
+      function comprobar() {
+        var inputCodigo = document.getElementById("codigo").value;
+        if (inputCodigo == 2014) {
+          pista.innerHTML =
+            "Correcto, diríjanse a Belice para la siguiente pista";
+        } else {
+          pista.innerHTML = "Incorrecto";
+        }
+      }
+    </script>
   </body>
 </html>
