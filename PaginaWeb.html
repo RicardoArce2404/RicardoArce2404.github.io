@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YMATH</title>
+		<style type="text/css">
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			#header {
+				padding: 0% 5% 0% 5%;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 2px solid grey;
+			}
+			#logo {
+				width: 100px;
+				align-self: center;
+			}
+			#categorias {
+				align-self: center;
+			}
+			#searchbar {
+				border-radius: 20px;
+				width: 40%;
+				height: 25px;
+				text-align: center;
+				align-self: center;
+			}
+			h2 {
+				border-bottom: 1px solid grey;
+				text-align: center;
+				padding-bottom: 5px;
+			}
+			.vidscontainer {
+				display: flex;
+				justify-content: space-between;
+				padding: 0% 5% 0% 5%;
+			}
+			.algvid {
+				width: 100px;
+				height: 85px;
+				background-color: skyblue;
+				border-radius: 5px;
+				box-shadow: 3px 3px 4px grey;
+			}
+			.calcvid {
+				width: 100px;
+				height: 85px;
+				background-color: lightcoral;
+				border-radius: 5px;
+				box-shadow: 3px 3px 4px grey;
+			}
+			.fisvid {
+				width: 100px;
+				height: 85px;
+				background-color: lightgreen;
+				border-radius: 5px;
+				box-shadow: 3px 3px 4px grey;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<span><img src="logo.png" id="logo" /></span>
+			<span id="categorias">Categorías</span>
+			<input id="searchbar" type="text" placeholder="Buscar..." />
+		</div>
+
+		<div id="algebra">
+			<h2>Álgebra</h2>
+			<div class="vidscontainer">
+				<div class="algvid"></div>
+				<div class="algvid"></div>
+				<div class="algvid"></div>
+			</div>
+		</div>
+
+		<div id="calculo">
+			<h2>Cálculo</h2>
+			<div class="vidscontainer">
+				<div class="calcvid"></div>
+				<div class="calcvid"></div>
+				<div class="calcvid"></div>
+			</div>
+		</div>
+
+		<div id="fisica">
+			<h2>Física</h2>
+			<div class="vidscontainer">
+				<div class="fisvid"></div>
+				<div class="fisvid"></div>
+				<div class="fisvid"></div>
+			</div>
+		</div>
+
+		<p>Videos en proceso...</p>
+	</body>
+</html>
